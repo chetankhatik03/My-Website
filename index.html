@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Educational MCQ Portal</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #2c7be5, #00c6ff);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* Main section */
+.container {
+    padding: 30px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Card */
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #2c7be5;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: white;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* Responsive (Tablet & Desktop) */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Welcome to Rajasthan Board Educational MCQ Portal</h1>
+    <p>RBSE & CBSE | Class 10 & 12 | English & हिंदी</p>
+</header>
+
+<div class="container">
+    <div class="section-title">
+        <h2>Select Your Board</h2>
+        <p>Choose your education board to start practice</p>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h2>RBSE</h2>
+            <p>Rajasthan Board<br>Class 10 & 12 MCQs</p>
+            <a href="rbse/index.html">Explore RBSE</a>
+        </div>
+
+        <div class="card">
+            <h2>CBSE</h2>
+            <p>Central Board of Secondary Education<br>Class 10 & 12 MCQs</p>
+            <a href="cbse/index.html">Explore CBSE</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Educational MCQ Project | Designed for Learning</p>
+</footer>
+
+</body>
+</html>
